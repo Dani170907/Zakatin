@@ -11,7 +11,7 @@ Membantu umat Muslim menghitung dan memahami zakat sesuai syariat dengan fitur s
 ---
 
 ## 📱 Platform
-- Android (Native Java)
+- Android (Kotlin)
 - Minimum SDK: Android 5.0 (API 21)
 
 ---
