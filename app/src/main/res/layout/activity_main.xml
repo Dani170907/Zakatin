@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- Judul-->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zakatin"
+        android:textColor="#2e7d32"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  sub judul  -->
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Penghitung zakat lengkap"
+        android:textColor="#666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <!-- Baris 1 -->
+    <Button
+        android:id="@+id/btnZakat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Zakat"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPelajari"
+        app:layout_constraintHorizontalChainStyle="packed"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnPelajari"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pelajari"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle"
+        app:layout_constraintStart_toEndOf="@id/btnZakat"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Baris 2 -->
+    <Button
+        android:id="@+id/btnTataCara"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tata Cara"
+        app:layout_constraintTop_toBottomOf="@id/btnZakat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnDalil"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/btnDalil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dalil"
+        app:layout_constraintTop_toBottomOf="@id/btnPelajari"
+        app:layout_constraintStart_toEndOf="@id/btnTataCara"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Baris 3 -->
+    <Button
+        android:id="@+id/btnLaporan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Laporan"
+        app:layout_constraintTop_toBottomOf="@id/btnTataCara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPengaturan"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/btnPengaturan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        app:layout_constraintTop_toBottomOf="@id/btnDalil"
+        app:layout_constraintStart_toEndOf="@id/btnLaporan"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
