@@ -23,7 +23,7 @@ Membantu umat Muslim menghitung dan memahami zakat sesuai syariat dengan fitur s
 - ✅ Hitung Zakat Fitrah
 - ✅ Bisa digunakan secara **offline**
 - ✅ Antarmuka sederhana dan responsif
-- (Coming soon) Export ke PDF / Share hasil
+- (Coming soon)
 
 ---
 
